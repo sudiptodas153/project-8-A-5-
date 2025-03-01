@@ -1,8 +1,7 @@
-let clickCount = 0;
-const totalButtons = 6;
-console.log(clickCount)
+
+
 document.getElementById('complate-btn-1').addEventListener('click', function () {
-    clickCount++;
+
 
     const task = document.getElementById('task-number').innerText;
     const taskValue = parseInt(task) - 1;
@@ -14,15 +13,22 @@ document.getElementById('complate-btn-1').addEventListener('click', function () 
     document.getElementById('add-task').innerText = addValue;
 
 
-
-
-
     alert('Board Updated Successfully')
     if (alert) {
         const classAdd = document.getElementById('complate-btn-1');
         classAdd.setAttribute('disabled', true)
     }
 
+
+
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+    
+
+
+   
     // time....
 
     let dates2 = new Date();
@@ -37,16 +43,9 @@ document.getElementById('complate-btn-1').addEventListener('click', function () 
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
 
-    if (clickCount === totalButtons) {
-        setTimeout(() => {
-            alert('🎉 Congrats! You have completed all tasks! 🎉');
-        }, 500);
-    }
 
 
 })
-
-
 
 document.getElementById('complate-btn-2').addEventListener('click', function () {
 
@@ -67,6 +66,13 @@ document.getElementById('complate-btn-2').addEventListener('click', function () 
         classAdd.setAttribute('disabled', true)
     }
 
+
+
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+
     // time....
 
     let dates2 = new Date();
@@ -80,8 +86,6 @@ document.getElementById('complate-btn-2').addEventListener('click', function () 
 `
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
-
-    clickCount++;
 
 })
 
@@ -104,6 +108,13 @@ document.getElementById('complate-btn-3').addEventListener('click', function () 
         classAdd.setAttribute('disabled', true)
     }
 
+
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+
+
     // time....
 
     let dates2 = new Date();
@@ -117,8 +128,6 @@ document.getElementById('complate-btn-3').addEventListener('click', function () 
 `
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
-
-    clickCount++;
 
 })
 
@@ -142,6 +151,13 @@ document.getElementById('complate-btn-4').addEventListener('click', function () 
     }
 
 
+
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+
+
     // time....
 
     let dates2 = new Date();
@@ -156,7 +172,7 @@ document.getElementById('complate-btn-4').addEventListener('click', function () 
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
 
-    clickCount++;
+    
 })
 
 document.getElementById('complate-btn-5').addEventListener('click', function () {
@@ -179,6 +195,12 @@ document.getElementById('complate-btn-5').addEventListener('click', function () 
     }
 
 
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+
+
     // time....
 
     let dates2 = new Date();
@@ -193,7 +215,7 @@ document.getElementById('complate-btn-5').addEventListener('click', function () 
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
 
-    clickCount++;
+   
 
 })
 
@@ -219,6 +241,13 @@ document.getElementById('complate-btn-6').addEventListener('click', function add
     }
 
 
+
+    const goodAlert = document.getElementById('task-number').innerText;
+    if(goodAlert == 0){
+        alert('Congrats!!! You have completed all the current task')
+    }
+
+
     // time....
 
     let dates2 = new Date();
@@ -233,15 +262,11 @@ document.getElementById('complate-btn-6').addEventListener('click', function add
     addHistory.classList.add('extra-style')
     history.appendChild(addHistory);
 
-    clickCount++;
+   
 })
 
 
 
-if (clickCount === 6) {
-    console.log(clickCount)
-    alert('fine')
-}
 
 
 
@@ -261,7 +286,7 @@ document.getElementById('clear-btn').addEventListener('click', function () {
 document.getElementById('blog').addEventListener('click', function () {
 
     window.location.href = './blog.html'
-})
+},)
 
 
 const dates2 = new Date();
@@ -288,7 +313,7 @@ document.getElementById('date-name').innerText = setDate;
 
 document.getElementById('theme-change').addEventListener('click', function () {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-    console.log(randomColor)
+
     document.body.style.backgroundColor = randomColor;
 })
 

@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-
+    <title>DevBoard</title>
+    <link rel="shortcut icon" href="./assets/logo.png" type="image/x-icon">
     <!-- tailwind -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- daisyui -->
@@ -23,32 +23,33 @@
 
 <body class="poppins-font bg-[#F4F7FF] p-3">
 
-    <header class=" container mx-auto ">
+    <header class=" lg:container lg:mx-auto ">
         <div class="navbar bg-white rounded-xl">
             <div class="navbar-start">
 
                 <a class="btn btn-ghost text-xl">
-                    <img class="w-10" src="./assets/logo.png" alt="">
-                    <span class="text-3xl font-normal">Dev<span class="font-bold">Board</span></span>
+                    <img class="w-7 lg:w-10" src="./assets/logo.png" alt="">
+                    <span class="lg:text-3xl font-normal">Dev<span class="font-bold">Board</span></span>
                 </a>
             </div>
 
             <div class="navbar-end">
-                <a class="btn rounded-2xl mr-5"><img class="w-6" src="./assets/checkbox.png" alt=""><span id="add-task"
-                        class="text-2xl">20</span></a>
-                <a id="theme-change" class="btn rounded-full w-12 h-12 p-2"><img class="" src="./assets/theme-btn.png" alt=""></a>
+                <a class="btn rounded-2xl mr-5"><img class="w-5 lg:w-6" src="./assets/checkbox.png" alt=""><span id="add-task"
+                        class="text-xl lg:text-2xl">20</span></a>
+                <a id="theme-change" class="btn rounded-full w-12 h-12 p-2"><img class="" src="./assets/theme-btn.png"
+                        alt=""></a>
             </div>
         </div>
     </header>
 
     <main class=" container mx-auto mt-6 ">
-        <section class="grid grid-cols-4 gap-6">
+        <section class="grid grid-cols-1 lg:grid-cols-4 gap-6">
 
-            <div class="col-span-3  bg-white rounded-2xl">
+            <div class="lg:col-span-3  bg-white rounded-2xl">
 
-                <div class="grid grid-cols-4 p-6 gap-5 border-b-2 border-gray-200 border-dashed">
+                <div class="grid grid-cols-1 lg:grid-cols-4 p-6 gap-5 border-b-2 border-gray-200 border-dashed">
 
-                    <div class="flex col-span-1 items-center justify-center rounded-xl bg-[#F4F7FF] gap-4 p-3">
+                    <div class="flex lg:col-span-1 items-center justify-center rounded-xl bg-[#F4F7FF] gap-4 p-3">
                         <div class="flex items-center justify-center rounded-full bg-white w-10 h-10 ">
                             <img class="w-5 " src="./assets/checkbox.png" alt="">
                         </div>
@@ -58,8 +59,8 @@
                         </div>
                     </div>
 
-                    <div id="blog" 
-                        class="flex items-center justify-center rounded-xl col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] gap-6 p-3">
+                    <div id="blog"
+                        class="flex items-center justify-center rounded-xl lg:col-span-2 bg-gradient-to-r from-[#3752FD] via-[#6C7FFA] to-[#9BA8F8] gap-6 p-3">
                         <div>
                             <img src="./assets/board.png" alt="">
                         </div>
@@ -68,7 +69,7 @@
                         </div>
                     </div>
 
-                    <div class="flex col-span-1 items-center justify-center rounded-xl bg-[#F4F7FF] gap-4 p-3">
+                    <div class="flex lg:col-span-1 items-center justify-center rounded-xl bg-[#F4F7FF] gap-4 p-3">
                         <div class="flex items-center justify-center rounded-full bg-white w-10 h-10 ">
                             <img class="w-5 " src="./assets/calender.png" alt="">
                         </div>
@@ -79,13 +80,16 @@
                     </div>
                 </div>
 
-                <div class="grid grid-cols-3 gap-6 p-6">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-6 p-6">
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">ShopEase</a>
                             <h1 id="title-1" class="text-xl font-medium">Fix Mobile Button Issue </h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">If your mobile button isn’t working, check for CSS issues like z-index or touch-action: manipulation;. Ensure JavaScript handles touchstart events and include the viewport meta tag. Use DevTools to debug overlaps or errors.</p>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">If your mobile button isn’t
+                                working, check for CSS issues like z-index or touch-action: manipulation;. Ensure
+                                JavaScript handles touchstart events and include the viewport meta tag. Use DevTools to
+                                debug overlaps or errors.</p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -94,16 +98,22 @@
                             </div>
 
                             <div>
-                                <a id="complate-btn-1" class=" btn hover:bg-[#2643ff] bg-[#3752FD] text-white">Completed</a>
+                                <a id="complate-btn-1"
+                                    class=" btn  bg-[#3752FD] text-white">Completed</a>
                             </div>
                         </div>
                     </div>
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">CloudSync</a>
                             <h1 id="title-2" class="text-xl font-medium">Add Dark Mode</h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To add dark mode, create a toggle button and apply a .dark-mode class to the <body> using JavaScript. Define dark mode styles in CSS, like changing the background and text colors. Use classList.toggle() in JavaScript.</p>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To add dark mode, create a
+                                toggle button and apply a .dark-mode class to the
+
+                                <body> using JavaScript. Define dark mode styles in CSS, like changing the background
+                                    and text colors. Use classList.toggle() in JavaScript.
+                            </p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -117,11 +127,14 @@
                         </div>
                     </div>
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">SwiftPay</a>
-                            <h1 id="title-3" class="text-xl font-medium">Optimize  Home page</h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To optimize your homepage, improve loading speed by compressing images and using lazy loading. Minimize CSS and JavaScript, enable caching, and use a CDN. Ensure a clean, mobile-friendly design with fast navigation.</p>
+                            <h1 id="title-3" class="text-xl font-medium">Optimize Home page</h1>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To optimize your homepage,
+                                improve loading speed by compressing images and using lazy loading. Minimize CSS and
+                                JavaScript, enable caching, and use a CDN. Ensure a clean, mobile-friendly design with
+                                fast navigation.</p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -135,11 +148,14 @@
                         </div>
                     </div>
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">Meta</a>
                             <h1 id="title-4" class="text-xl font-medium">Add new emoji</h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To add new emojis, use Unicode characters, emoji fonts. You can also include custom emojis with CSS or JavaScript by replacing text with images. For websites, consider emoji libraries like Twemoji for better compatibility.</p>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To add new emojis, use Unicode
+                                characters, emoji fonts. You can also include custom emojis with CSS or JavaScript by
+                                replacing text with images. For websites, consider emoji libraries like Twemoji for
+                                better compatibility.</p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -153,11 +169,14 @@
                         </div>
                     </div>
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">Google LLC</a>
                             <h1 id="title-5" class="text-xl font-medium">Integrate OpenAI API </h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To integrate the OpenAI API, sign up for an API key and use it in your backend or frontend. Make requests via fetch() in JavaScript or requests in Python. Ensure proper authentication and handle responses efficiently.</p>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To integrate the OpenAI API,
+                                sign up for an API key and use it in your backend or frontend. Make requests via fetch()
+                                in JavaScript or requests in Python. Ensure proper authentication and handle responses
+                                efficiently.</p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -171,11 +190,14 @@
                         </div>
                     </div>
 
-                    <div class="w-72 bg-[#F4F7FF] rounded-2xl p-3">
+                    <div class="lg:w-72 bg-[#F4F7FF] rounded-2xl p-3">
                         <div class="space-y-3 border-b-2 border-gray-200 border-dashed mt-2 pb-4">
                             <a class=" p-2 rounded-md text-xs border-none bg-white">Glassdoar</a>
                             <h1 id="title-6" class="text-xl font-medium">Improve Job searching </h1>
-                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To improve job searching, use multiple platforms optimize your resume with keywords and network on LinkedIn. Set up job alerts tailor applications to each role . Stay updated with industry trends to increase your chances. </p>
+                            <p class="bg-white text-xs text-[#888686e5] p-2 rounded-xl">To improve job searching, use
+                                multiple platforms optimize your resume with keywords and network on LinkedIn. Set up
+                                job alerts tailor applications to each role . Stay updated with industry trends to
+                                increase your chances. </p>
                         </div>
                         <div class="flex items-center justify-center gap-3 mt-3 ">
                             <div>
@@ -193,7 +215,7 @@
 
             </div>
 
-            <div class="col-span-1  bg-white rounded-2xl ">
+            <div class="lg:col-span-1  bg-white rounded-2xl ">
 
                 <div class="text-center py-6 border-b-2 border-gray-200 border-dashed">
                     <div class="flex items-center gap-3 justify-center">
