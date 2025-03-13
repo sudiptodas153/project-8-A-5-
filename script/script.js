@@ -277,7 +277,7 @@ document.getElementById('complate-btn-6').addEventListener('click', function add
 
 document.getElementById('clear-btn').addEventListener('click', function () {
     const history2 = document.getElementById('add-history');
-    history2.classList.add('hidden')
+    history2.innerHTML=""
 
 })
 
@@ -313,7 +313,7 @@ document.getElementById('date-name').innerText = setDate;
 
 document.getElementById('theme-change').addEventListener('click', function () {
     const randomColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
-
+console.log(randomColor)
     document.body.style.backgroundColor = randomColor;
 })
 
